@@ -1,2 +1,191 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.erb
+%head
+  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+#wrapper
+  %nav#gnav.fixed
+    %ul
+      %li
+        %a{:href => "#works"} WORKS
+      %li
+        %a{:href => "#feature"} FEATURE
+      %li
+        %a{:href => "#about"} ABOUT
+      %li
+        %a{:href => "#skill"} SKILL
+      %li
+        %a{:href => "#contact"} CONTACT
+  %header#header
+    .inner
+      %h1.logo
+        .logo-title YUGA NISHIDA
+        .logo-desc PORTFOLIO
+  %main#contents
+    %section#works.section
+      .inner
+        .section-title-area
+          %h2.section-title WORKS
+          .section-intro
+            .section-text
+              Web（デザインとコーディング）制作の記録です。
+              %br.pc>/
+              デザイン練習用の架空サイト（ファーストビューのみ）も含んでおります。
+        .section-body.card-wrapper.my-gallery
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/favorites.jpg"
+            .card-caption
+              .card-caption-title favorites
+              .card-caption-info Design / Coding(Responsive) / WordPress
+              .card-caption-url
+                =link_to "Link", 'https://favorites7.herokuapp.com/'
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/ChatSpace.png"
+            .card-caption
+              .card-caption-title ChatSpace
+              .card-caption-info Design / Coding(Responsive)
+              .card-caption-url
+                =link_to "Link", 'http://54.238.182.239'
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/freemarket.jpg"
+            .card-caption
+              .card-caption-title FURIMA
+              .card-caption-info Design
+              .card-caption-url
+                =link_to "Link", 'http://18.180.21.98/'
+          .card
+            %a.card-image.hover-action-01
+              = video_tag "/assets/videos/cargame.mp4", :autoplay => true, :loop => true
+            .card-caption
+              .card-caption-title サイト名が入る
+              .card-caption-info Design
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/game.jpg"
+            .card-caption
+              .card-caption-title サイト名が入る
+              .card-caption-info Design
+          .card
+            %a.card-image.hover-action-01
+              = video_tag "/assets/videos/shooting.mp4", :autoplay => true, :loop => true
+            .card-caption
+              .card-caption-title サイト名が入る
+              .card-caption-info Design
+    %section#feature.section
+      .inner
+        .section-title-area
+          %h2.section-title FEATURE
+          .section-intro
+            1サイトの解説
+        .section-body
+          .section-image
+            %a.hover-action-01
+              =image_tag "feature/feature.jpg"
+          .section-desc
+            .section-text
+              %span.text-bold サイト名：favorites
+              %br/
+              =link_to "https://favorites7.herokuapp.com/", 'https://favorites7.herokuapp.com/'
+              %br/
+              %br/
+              %span.text-bold 担当：
+              = succeed "Design" do
+                %br/
+              %br/
+              %br/
+              %span.text-bold コメント：
+              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
+                %br/
+              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
+                %br/
+              %br/
+              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
+                %br/
+              %br/
+              %br/
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              %br/
+              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
+                %br/
+    %section#about.section
+      .inner
+        .section-title-area
+          %h2.section-title ABOUT
+          .section-intro
+            こんにちは！
+        .section-body
+          .section-image
+            =image_tag "about/profile.jpg"
+          .section-desc
+            .section-text
+              テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              %br>/
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              %br/
+              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
+                %br/
+    %section#skill.section
+      .inner
+        .section-title-area
+          %h2.section-title SKILL
+          .section-intro
+            未経験ですが頑張ります！
+        .section-body.card-wrapper
+          .card
+            .skill-icon
+              =image_tag "skill/icon_skill.png"
+            .skill-desc
+              %h3.skill-desc-title HTML5/CSS3
+          .card
+            .skill-icon
+              =image_tag "skill/icon_skill.png"
+            .skill-desc
+              %h3.skill-desc-title JavaScript
+          .card
+            .skill-icon
+              =image_tag "skill/icon_skill.png"
+            .skill-desc
+              %h3.skill-desc-title WordPress
+          .card
+            .skill-icon
+              =image_tag "skill/icon_skill.png"
+            .skill-desc
+              %h3.skill-desc-title Photoshop
+          .card
+            .skill-icon
+              =image_tag "skill/icon_skill.png"
+            .skill-desc
+              %h3.skill-desc-title Illustrator
+              .rating
+                .rate.rate3
+              .section-text
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          .card
+            .skill-icon
+              =image_tag "skill/icon_skill.png"
+            .skill-desc
+              %h3.skill-desc-title XD
+              .rating
+                .rate.rate3
+              .section-text
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    %section#contact.section
+      .inner
+        .section-title-area
+          %h2.section-title CONTACT
+          .section-intro
+            お問い合わせは、SNSかメールでお願いいたします。
+        .section-body.contact-wrapper
+          .contact-list
+            %ul
+              %li
+                %a{:href => "https://twitter.com/onizaru_onioni", :target => "_blank"}
+                  =image_tag "contact/icon_tw.png"
+              %li
+                %a{:href => "https://www.facebook.com/yuga.nishida", :target => "_blank"}
+                  =image_tag "contact/icon_fb.png"
+            .contact-other 15ba299s@gmail.com
+    %footer#footer
+      .pageTop
+        #js-pageTop
+          Page Top
