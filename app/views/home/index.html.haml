@@ -1,0 +1,200 @@
+%head
+  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+#wrapper
+  %nav#gnav.fixed
+    %ul
+      %li
+        %a{:href => "#works"} WORKS
+      %li
+        %a{:href => "#feature"} FEATURE
+      %li
+        %a{:href => "#about"} ABOUT
+      %li
+        %a{:href => "#skill"} SKILL
+      %li
+        %a{:href => "#contact"} CONTACT
+  %header#header
+    .inner
+      %h1.logo
+        .logo-title YUGA NISHIDA
+        .logo-desc PORTFOLIO
+  %main#contents
+    %section#works.section
+      .inner
+        .section-title-area
+          %h2.section-title WORKS
+          .section-intro
+            .section-text
+              Web制作物の記録です。
+        .section-body.card-wrapper.my-gallery
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/favorites.jpg"
+            .card-caption
+              .card-caption-title favorites
+              .card-caption-info 自分のお気に入りのコンテンツを保存しておくことができるアプリケーションです。
+              .card-caption-url
+                =link_to "Link", 'https://favorites7.herokuapp.com/'
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/ChatSpace.png"
+            .card-caption
+              .card-caption-title ChatSpace
+              .card-caption-info TECH::EXPERTのカリキュラム上で制作したチャットアプリケーションです。
+              .card-caption-url
+                =link_to "Link", 'http://54.238.182.239'
+          .card
+            %a.card-image.hover-action-01
+              =image_tag "works/freemarket.jpg"
+            .card-caption
+              .card-caption-title FURIMA
+              .card-caption-info TECH::EXPERTの最終課題で制作したフリーマーケットのアプリケーションです。
+              .card-caption-url
+                =link_to "Link", 'http://18.180.21.98/'
+          .card
+            %a.card-image.hover-action-01
+              = video_tag "/assets/videos/cargame.mp4", autoplay: true, loop: true, muted: true
+            .card-caption
+              .card-caption-title CarGame
+              .card-caption-info JavaScriptを用いたカーゲームです。
+          .card
+            %a.card-image.hover-action-01
+              =video_tag "/assets/videos/puzzle.mp4", autoplay: true, loop: true, muted: true
+            .card-caption
+              .card-caption-title PuzzleGame
+              .card-caption-info JavaScriptを用いた数字合わせパズルゲームです。
+          .card
+            %a.card-image.hover-action-01
+              = video_tag "/assets/videos/shooting.mp4", autoplay: true, loop: true, muted: true
+            .card-caption
+              .card-caption-title ShootingGame
+              .card-caption-info JavaScriptを用いたシューティングゲームです。
+    %section#feature.section
+      .inner
+        .section-title-area
+          %h2.section-title FEATURE
+          .section-intro
+            1サイトの解説
+        .section-body
+          .section-image
+            %a.hover-action-01
+              =image_tag "feature/favorites3.jpg"
+            %a.hover-action-01#feature-img
+              =image_tag "feature/favorites4.jpg"
+          .section-desc
+            .section-text
+              %span.text-bold サイト名：favorites
+              %br/
+              =link_to "https://favorites7.herokuapp.com/", 'https://favorites7.herokuapp.com/'
+              %br/
+              %br/
+              %span.text-bold 自分のお気に入りの音楽や映画などをコレクションすることのできるオリジナルサイトです。
+              %br/
+              %span.text-bold Ruby on Railsで初めてオリジナルで作ったアプリケーションになります！
+              %br/
+              %span.text-bold 投稿機能や削除機能の部分を、JavaScriptを用いて非同期通信を実装しました。
+              
+    %section#about.section
+      .inner
+        .section-title-area
+          %h2.section-title ABOUT
+          .section-intro
+            こんにちは！西田雄河です！
+        .section-body
+          .section-image
+            =image_tag "about/profile.png"
+          .section-desc
+            .section-text
+              %span.text-bold 自分のポートフォリオサイトを見てくれてありがとうございます！
+              %br/
+              %span.text-bold 千葉県佐倉市出身の23歳の西田雄河(にしだゆうが)と申します。
+              %br/ 
+              %span.text-bold 趣味は、 MCバトル観賞とYoutube観賞です。特に好きなYoutuberは、「チャンネルがーどまん」と「カルマ」です！最近は、「かの/カノックスター」というYoutuberがおすすめです！笑
+              %br/
+              %span.text-bold 小学校から大学3年生までサッカーをしていました！大学の時に、サークル関東選抜に選ばれたこともあります！(過去の栄光)
+              %br/
+              %span.text-bold 写真も大学3年の現役時の一番痩せてた時期です！笑(過去の栄光)
+              %br/
+              %br/
+              %span.text-bold 大学在学中から訪問販売業に取り組んでおり卒業後もフリーランスとして続けていましたが、マコなり社長(株式会社div 代表取締役）さんのYoutube動画でプログラミングに強い興味を持ち、全くの未経験からTECH::EXPERTに通いプログラミングを学びました！
+              %br/
+              %span.text-bold 現在は、卒業して転職活動中です！
+              %br/
+              %span.text-bold 世の中に役に立つサービスを提供し続けることのできるエンジニアを目指します！
+              %br/
+              %span.text-bold 宜しくお願いします！
+              %br/
+              %br/
+              学歴:
+              %br/
+              2012.4 千葉県立八千代高等学校 普通科 入学
+              %br/
+              2015.3 千葉県立八千代高等学校 普通科 卒業
+              %br/
+              2015.4 立教大学 経済学部 経済学科 入学
+              %br/
+              2019.3 立教大学 経済学部 経済学科 卒業
+              %br/
+              学習歴:
+              %br/
+              2019.12 短期集中プログラミングスクール TECH::EXPERT（株式会社div） 入学
+              %br/
+              2020.3 短期集中プログラミングスクール TECH::EXPERT（株式会社div） 卒業
+
+    %section#skill.section
+      .inner
+        .section-title-area
+          %h2.section-title SKILL
+          .section-intro
+            未経験ですが頑張ります！
+        .section-body.card-wrapper
+          .card
+            .skill-icon
+              =image_tag "skill/ruby.png"
+            .skill-desc
+              %h3.skill-desc-title Ruby, Ruby on Rails
+          .card
+            .skill-icon
+              =image_tag "skill/haml.png"
+            .skill-desc
+              %h3.skill-desc-title Haml
+          .card
+            .skill-icon
+              =image_tag "skill/sass.png"
+            .skill-desc
+              %h3.skill-desc-title SASS
+          .card
+            .skill-icon
+              =image_tag "skill/js.png"
+            .skill-desc
+              %h3.skill-desc-title JavaScript, jquery
+          .card
+            .skill-icon
+              =image_tag "skill/github.png"
+            .skill-desc
+              %h3.skill-desc-title GitHub
+          .card
+            .skill-icon
+              =image_tag "skill/aws.png"
+            .skill-desc
+              %h3.skill-desc-title AWS
+    %section#contact.section
+      .inner
+        .section-title-area
+          %h2.section-title CONTACT
+          .section-intro
+            お問い合わせは、SNSかメールでお願いいたします。
+        .section-body.contact-wrapper
+          .contact-list
+            %ul
+              %li
+                %a{:href => "https://twitter.com/onizaru_onioni", :target => "_blank"}
+                  =image_tag "contact/icon_tw.png"
+              %li
+                %a{:href => "https://www.facebook.com/yuga.nishida", :target => "_blank"}
+                  =image_tag "contact/icon_fb.png"
+            .contact-other 15ba299s@gmail.com
+    %footer#footer
+      .pageTop
+        #js-pageTop
+          Page Top
