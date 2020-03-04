@@ -25,16 +25,14 @@
           %h2.section-title WORKS
           .section-intro
             .section-text
-              Web（デザインとコーディング）制作の記録です。
-              %br.pc>/
-              デザイン練習用の架空サイト（ファーストビューのみ）も含んでおります。
+              Web制作物の記録です。
         .section-body.card-wrapper.my-gallery
           .card
             %a.card-image.hover-action-01
               =image_tag "works/favorites.jpg"
             .card-caption
               .card-caption-title favorites
-              .card-caption-info Design / Coding(Responsive) / WordPress
+              .card-caption-info 自分のお気に入りのコンテンツを保存しておくことができるアプリケーションです。
               .card-caption-url
                 =link_to "Link", 'https://favorites7.herokuapp.com/'
           .card
@@ -42,7 +40,7 @@
               =image_tag "works/ChatSpace.png"
             .card-caption
               .card-caption-title ChatSpace
-              .card-caption-info Design / Coding(Responsive)
+              .card-caption-info TECH::EXPERTのカリキュラム上で制作したチャットアプリケーションです。
               .card-caption-url
                 =link_to "Link", 'http://54.238.182.239'
           .card
@@ -50,27 +48,27 @@
               =image_tag "works/freemarket.jpg"
             .card-caption
               .card-caption-title FURIMA
-              .card-caption-info Design
+              .card-caption-info TECH::EXPERTの最終課題で制作したフリーマーケットのアプリケーションです。
               .card-caption-url
                 =link_to "Link", 'http://18.180.21.98/'
           .card
             %a.card-image.hover-action-01
               = video_tag "/assets/videos/cargame.mp4", autoplay: true, loop: true, muted: true
             .card-caption
-              .card-caption-title サイト名が入る
-              .card-caption-info Design
+              .card-caption-title CarGame
+              .card-caption-info JavaScriptを用いたカーゲームです。
           .card
             %a.card-image.hover-action-01
               =video_tag "/assets/videos/puzzle.mp4", autoplay: true, loop: true, muted: true
             .card-caption
-              .card-caption-title サイト名が入る
-              .card-caption-info Design
+              .card-caption-title PuzzleGame
+              .card-caption-info JavaScriptを用いた数字合わせパズルゲームです。
           .card
             %a.card-image.hover-action-01
               = video_tag "/assets/videos/shooting.mp4", autoplay: true, loop: true, muted: true
             .card-caption
-              .card-caption-title サイト名が入る
-              .card-caption-info Design
+              .card-caption-title ShootingGame
+              .card-caption-info JavaScriptを用いたシューティングゲームです。
     %section#feature.section
       .inner
         .section-title-area
@@ -80,7 +78,9 @@
         .section-body
           .section-image
             %a.hover-action-01
-              =image_tag "feature/feature.jpg"
+              =image_tag "feature/favorites3.jpg"
+            %a.hover-action-01#feature-img
+              =image_tag "feature/favorites4.jpg"
           .section-desc
             .section-text
               %span.text-bold サイト名：favorites
@@ -88,25 +88,12 @@
               =link_to "https://favorites7.herokuapp.com/", 'https://favorites7.herokuapp.com/'
               %br/
               %br/
-              %span.text-bold 担当：
-              = succeed "Design" do
-                %br/
+              %span.text-bold 自分のお気に入りの音楽や映画などをコレクションすることのできるオリジナルサイトです。
               %br/
+              %span.text-bold Ruby on Railsで初めてオリジナルで作ったアプリケーションになります！
               %br/
-              %span.text-bold コメント：
-              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
-                %br/
-              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
-                %br/
-              %br/
-              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
-                %br/
-              %br/
-              %br/
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              %br/
-              = succeed "\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}\u{30c6}\u{30ad}\u{30b9}\u{30c8}" do
-                %br/
+              %span.text-bold 投稿機能や削除機能の部分を、JavaScriptを用いて非同期通信を実装しました。
+              
     %section#about.section
       .inner
         .section-title-area
@@ -118,24 +105,24 @@
             =image_tag "about/profile.png"
           .section-desc
             .section-text
-              自分のポートフォリオサイトを見てくれてありがとうございます！
+              %span.text-bold 自分のポートフォリオサイトを見てくれてありがとうございます！
               %br/
-              千葉県佐倉市出身の23歳の西田雄河(にしだゆうが)と申します。
+              %span.text-bold 千葉県佐倉市出身の23歳の西田雄河(にしだゆうが)と申します。
               %br/ 
-              趣味は、 MCバトル観賞とYoutube観賞です。好きなYoutuberは、「チャンネルがーどまん」とか「カルマ」です！最近は、「かの/カノックスター」というYoutuberがおすすめです！笑
+              %span.text-bold 趣味は、 MCバトル観賞とYoutube観賞です。特に好きなYoutuberは、「チャンネルがーどまん」と「カルマ」です！最近は、「かの/カノックスター」というYoutuberがおすすめです！笑
               %br/
-              小学校から大学3年生までサッカーをしていました！大学の時に、サークル関東選抜に選ばれたこともあります！(過去の栄光)
+              %span.text-bold 小学校から大学3年生までサッカーをしていました！大学の時に、サークル関東選抜に選ばれたこともあります！(過去の栄光)
               %br/
-              写真も大学3年の現役時の一番痩せてた時期です！笑(過去の栄光)
+              %span.text-bold 写真も大学3年の現役時の一番痩せてた時期です！笑(過去の栄光)
               %br/
               %br/
-              大学在学中から訪問販売業に取り組んでおり卒業後もフリーランスとして続けていましたが、マコなり社長(株式会社div 代表取締役）さんのYoutube動画でプログラミングに強い興味を持ち、全くの未経験からテックエキスパートに通いプログラミングを学びました！
+              %span.text-bold 大学在学中から訪問販売業に取り組んでおり卒業後もフリーランスとして続けていましたが、マコなり社長(株式会社div 代表取締役）さんのYoutube動画でプログラミングに強い興味を持ち、全くの未経験からTECH::EXPERTに通いプログラミングを学びました！
               %br/
-              現在は、卒業して転職活動中です！
+              %span.text-bold 現在は、卒業して転職活動中です！
               %br/
-              世の中に役に立つサービスを提供し続けることのできるエンジニアを目指します！
+              %span.text-bold 世の中に役に立つサービスを提供し続けることのできるエンジニアを目指します！
               %br/
-              宜しくお願いします！
+              %span.text-bold 宜しくお願いします！
               %br/
               %br/
               学歴:
