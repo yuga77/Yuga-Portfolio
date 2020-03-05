@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
   $('#page, #page1, #page2, #page3, #page4').on('click', function (e) {
     e.preventDefault();
